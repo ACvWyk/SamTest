@@ -1,0 +1,24 @@
+name: lowdefy-project-template
+lowdefy: 3.10.1
+
+menus:
+  - id: default
+    links:
+      - id: welcome
+        type: MenuLink
+        properties:
+          icon: HomeOutlined
+          title: Home
+        pageId: welcome
+      - id: new-ticket
+        type: MenuLink
+        properties:
+          icon: AlertOutlined
+          title: New ticket
+        pageId: new-ticket
+
+pages:
+  - _ref: new-ticket.yaml
+  - id: welcome
+    type: PageHeaderMenu
+    # ...
